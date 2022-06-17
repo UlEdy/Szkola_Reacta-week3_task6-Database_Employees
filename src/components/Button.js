@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Button = ({ label, bgColor, color, icon }) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCat } from '@fortawesome/free-solid-svg-icons';
+
+const Button = ({ label, bgColor = 'yellow', color = 'green' }) => {
 	return (
 		<button style={{ background: bgColor, color }}>
-			{icon} {label}
+			<FontAwesomeIcon icon={faCat} /> {label}
 		</button>
 	);
 };
