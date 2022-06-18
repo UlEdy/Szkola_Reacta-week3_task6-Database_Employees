@@ -1,21 +1,21 @@
 import { useState } from 'react';
-import { Button } from '../../Form';
+import { Button } from '../Form';
+import Header from './Header';
 
 import './styles.css';
 
-const Card = ({ title, pic, alt, intro, content, date }) => {
-	const [show, setShow] = useState(false);
-	console.log(show);
+const Card = ({ title, author, date, pic, alt, intro, content }) => {
+	const [showMore, setShowMore] = useState(false);
 	return (
 		<div>
-			<h2>{title}</h2>
-			<div>{date}</div>
-			<img src={pic} alt={alt} />
+			<Header author={author} title={title} date={date} />
+			<img className='cardImg' src={pic} alt={alt} />
 			<div> {intro}</div>
-			<Button onClick={() => setShow((prevShow) => !prevShow)}>
-				Click for more...
-			</Button>
-			<div className={!show ? 'visible' : null}>{content}</div>
+			<div className={!showMore ? 'visible' : null}>{content}</div>
+			<Button
+				onClick={() => setShowMore((prevShow) => !prevShow)}
+				label={!showMore ? 'Click for more' : 'Less info'}
+			/>
 		</div>
 	);
 };

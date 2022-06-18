@@ -1,9 +1,9 @@
 const Textarea = ({
 	bgColor = 'wheat',
-	color = 'coral',
-	borderSize = 'medium',
-	borderRadius = 100,
-	borderColor = 'red',
+	color = 'darkgoldenrod',
+	borderSize = '1px',
+	borderRadius = 10,
+	borderColor = 'coral',
 }) => {
 	const styles = {
 		backgroundColor: bgColor,
