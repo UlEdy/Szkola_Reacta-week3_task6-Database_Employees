@@ -1,6 +1,6 @@
 const Textarea = ({
 	bgColor = 'wheat',
-	color = 'orange',
+	color = 'coral',
 	borderSize = 'medium',
 	borderRadius = 100,
 	borderColor = 'red',

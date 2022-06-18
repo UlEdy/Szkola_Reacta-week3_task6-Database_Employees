@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCat } from '@fortawesome/free-solid-svg-icons';
 
-const Button = ({ children, bgColor = 'green', color = 'orange' }) => {
+const Button = ({ children, bgColor = 'grey', color = 'coral', onClick }) => {
 	const styles = {
 		background: bgColor,
 		color,
@@ -9,7 +9,7 @@ const Button = ({ children, bgColor = 'green', color = 'orange' }) => {
 		margin: 5,
 	};
 	return (
-		<button style={styles}>
+		<button style={styles} onClick={onClick}>
 			<FontAwesomeIcon icon={faCat} /> {children}
 		</button>
 	);
