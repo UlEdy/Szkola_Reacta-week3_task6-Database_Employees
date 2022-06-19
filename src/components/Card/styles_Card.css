@@ -3,6 +3,7 @@
 }
 
 .title {
+	font: message-box;
 	font-size: 15px;
 	color: darkgoldenrod;
 	margin: 0;
@@ -36,4 +37,13 @@
 .cardImg {
 	display: inline-block;
 	max-width: 60vh;
+}
+
+Button {
+	font: message-box;
+	font-size: 12px;
+}
+
+Header > div {
+	font: oblique;
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from '../Form';
 import Header from './Header';
 
-import './styles.css';
+import './styles_Card.css';
 
 const Card = ({ title, author, date, pic, alt, intro, content }) => {
 	const [showMore, setShowMore] = useState(false);

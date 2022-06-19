@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles_Card.css';
 
 const Header = ({ title, author, date }) => {
 	return (
