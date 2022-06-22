@@ -3,17 +3,15 @@ import { faCat } from '@fortawesome/free-solid-svg-icons';
 
 const Button = ({
 	label,
-	bgColor = 'wheat',
+	backgroundColor = 'wheat',
 	color = 'darkgoldenrod',
 	onClick,
 }) => {
 	const styles = {
-		background: bgColor,
+		backgroundColor,
 		color,
 		padding: 5,
 		margin: 5,
-		// borderColor: 'coral',
-		// borderRadius: 10,
 		border: 'none',
 	};
 	return (

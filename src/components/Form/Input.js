@@ -14,9 +14,7 @@ const Input = ({
 		margin: 5,
 	};
 
-	return (
-		<input style={styles} type='text' placeholder='Type some text...'></input>
-	);
+	return <input style={styles} type='text' placeholder='Type some text...' />;
 };
 
 export default Input;

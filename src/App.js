@@ -1,6 +1,8 @@
 import './App.css';
-import { Input, Textarea } from './components/Form';
+
 import Card from './components/Card';
+// import Employees from './components/Employees';
+import { Input, Textarea } from './components/Form';
 import { Menu, MenuLink } from './components/Menu';
 
 import './App.css';
@@ -32,6 +34,7 @@ function App() {
 				<Input />
 				<Textarea />
 			</Container>
+			{/* <Employees /> */}
 		</div>
 	);
 }

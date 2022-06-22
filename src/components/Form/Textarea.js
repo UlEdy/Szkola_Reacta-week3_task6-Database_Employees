@@ -14,8 +14,6 @@ const Textarea = ({
 		margin: 5,
 	};
 
-	return (
-		<textarea style={styles} type='text' placeholder='More text...'></textarea>
-	);
+	return <textarea style={styles} type='text' placeholder='More text...' />;
 };
 export default Textarea;

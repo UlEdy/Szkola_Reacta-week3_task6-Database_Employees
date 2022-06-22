@@ -6,6 +6,8 @@ import './styles_Card.css';
 
 const Card = ({ title, author, date, pic, alt, intro, content }) => {
 	const [showMore, setShowMore] = useState(false);
+	const clickMore = () => setShowMore((prevShow) => !prevShow);
+
 	return (
 		<div>
 			<Header author={author} title={title} date={date} />
@@ -13,7 +15,7 @@ const Card = ({ title, author, date, pic, alt, intro, content }) => {
 			<div> {intro}</div>
 			<div className={!showMore ? 'visible' : null}>{content}</div>
 			<Button
-				onClick={() => setShowMore((prevShow) => !prevShow)}
+				onClick={() => clickMore}
 				label={!showMore ? 'Click for more' : 'Less info'}
 			/>
 		</div>
