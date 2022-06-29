@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './styles_Employees.css';
 
 const Employees = ({ nameEmp, surnameEmp, salary, position, num }) => {
-	const [showMore, setShowMore] = useState();
+	const [showMore, setShowMore] = useState(false);
 	const clickMore = () => setShowMore((prevShow) => !prevShow);
 	return (
 		<div className='table'>
