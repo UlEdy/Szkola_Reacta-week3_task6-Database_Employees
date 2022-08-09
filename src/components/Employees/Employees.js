@@ -2,7 +2,9 @@ import { useState } from 'react';
 
 import './styles_Employees.css';
 
-const Employees = ({ nameEmp, surnameEmp, salary, position, num }) => {
+const Employees = ({ data }) => {
+	const { name, surname, salary, position, num } = data;
+
 	const [showMore, setShowMore] = useState(false);
 	const clickMore = () => setShowMore((prevShow) => !prevShow);
 	return (
@@ -10,8 +12,8 @@ const Employees = ({ nameEmp, surnameEmp, salary, position, num }) => {
 			<section>
 				<h6>Person {num}</h6>
 				<div onClick={clickMore}>
-					<div>Name: {nameEmp}</div>
-					<div>Surname: {surnameEmp}</div>
+					<div>Name: {name}</div>
+					<div>Surname: {surname}</div>
 				</div>
 			</section>
 			<section>

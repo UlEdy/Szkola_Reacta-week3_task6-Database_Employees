@@ -6,9 +6,13 @@ import './styles_Employees.css';
 const EmployeesList = () => (
 	<div>
 		<h3>Employees</h3>
-		{data.map(({ id, name, surname }) => (
-			<Employees key={id} num={id} nameEmp={name} surnameEmp={surname} />
+		{data.map((emp) => (
+			<Employees key={emp.id} data={emp} />
 		))}
+
+		{/* {data.map(({ id, name, surname }) => (
+			<Employees key={id} num={id} nameEmp={name} surnameEmp={surname} />
+		))} */}
 	</div>
 );
 
