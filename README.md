@@ -1,4 +1,4 @@
-# Simple Form with Validation
+# Database - Employees
 
 This project consists of React components and fake database. This task is from the Szkoła Reacta course.
 
