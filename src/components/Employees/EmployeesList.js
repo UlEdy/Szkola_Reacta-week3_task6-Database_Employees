@@ -10,9 +10,6 @@ const EmployeesList = () => (
 			<Employees key={emp.id} data={emp} />
 		))}
 
-		{/* {data.map(({ id, name, surname }) => (
-			<Employees key={id} num={id} nameEmp={name} surnameEmp={surname} />
-		))} */}
 	</div>
 );
 
